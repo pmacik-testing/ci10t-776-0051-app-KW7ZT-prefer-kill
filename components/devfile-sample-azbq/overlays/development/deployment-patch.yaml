@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-azbq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0051-tenant/ci10t-776-0051-app/devfile-sample-azbq@sha256:0456322663fc219970ecfd89c76c49190d1499b662306a9bcf2198d7c1de038c
+        name: my-nodejs
+        resources: {}
+status: {}
